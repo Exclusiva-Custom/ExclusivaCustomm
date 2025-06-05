@@ -1,35 +1,111 @@
-
+html_content = """
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Exclusiva Custom</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exclusiva Custom</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
-<body>
-    <h1>Exclusiva Custom - Productos Personalizados</h1>
-
-    <h2>Destacados</h2>
-
-    <div>
-        <h3>Espinilleras Pro</h3>
-        <p>Personalización completa - €24.99</p>
-        <a href="https://wa.me/34685182646?text=Hola,%20estoy%20interesado%20en%20el%20producto%20Espinilleras%20Pro%20que%20vi%20en%20su%20web." target="_blank">WhatsApp</a>
-        <a href="mailto:exclusivacustom601@gmail.com?subject=Pedido%20de%20producto&body=Hola,%20quiero%20información%20sobre%20el%20producto%20Espinilleras%20Pro.">Email</a>
+<body class="bg-white text-gray-800">
+  <header class="fixed top-0 w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <img src="https://dummyimage.com/140x40/000/fff.png&text=Exclusiva+Custom" alt="Logotipo" class="h-10">
+      <nav class="space-x-4 hidden md:block">
+        <a href="#productos" class="text-sm font-medium hover:text-black">Productos</a>
+        <a href="#testimonios" class="text-sm font-medium hover:text-black">Testimonios</a>
+        <a href="#contacto" class="text-sm font-medium hover:text-black">Contacto</a>
+      </nav>
     </div>
+  </header>
 
-    <div>
-        <h3>Camiseta Elite Bordada</h3>
-        <p>Bordado premium - €39.99</p>
-        <a href="https://wa.me/34685182646?text=Hola,%20estoy%20interesado%20en%20el%20producto%20Camiseta%20Elite%20Bordada%20que%20vi%20en%20su%20web." target="_blank">WhatsApp</a>
-        <a href="mailto:exclusivacustom601@gmail.com?subject=Pedido%20de%20producto&body=Hola,%20quiero%20información%20sobre%20el%20producto%20Camiseta%20Elite%20Bordada.">Email</a>
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1585386959984-a41552262e4c?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 text-center text-white px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Tu diseño. Tu estilo.</h1>
+      <p class="text-lg md:text-2xl mb-6">Camisetas, tazas, espinilleras y más productos personalizables</p>
+      <a href="#productos" class="inline-block bg-white text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition">Ver catálogo</a>
     </div>
+  </section>
 
-    <div>
-        <h3>Taza Personalizada</h3>
-        <p>Con tu nombre, logo o diseño - €12.99</p>
-        <p>Cerámica premium, apta para lavavajillas</p>
-        <a href="https://wa.me/34685182646?text=Hola,%20estoy%20interesado%20en%20el%20producto%20Taza%20Personalizada%20que%20vi%20en%20su%20web." target="_blank">WhatsApp</a>
-        <a href="mailto:exclusivacustom601@gmail.com?subject=Pedido%20de%20producto&body=Hola,%20quiero%20información%20sobre%20el%20producto%20Taza%20Personalizada.">Email</a>
+  <section id="productos" class="py-20 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Productos Destacados</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="shadow-lg rounded-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1588776814546-7c1f6e6a9db7?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover" alt="Taza">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Taza Personalizada</h3>
+          <p class="text-sm text-gray-600">Cerámica premium, diseño a tu gusto</p>
+          <div class="mt-3 flex justify-between items-center">
+            <span class="text-lg font-bold">€12.99</span>
+            <div class="space-x-3">
+              <a href="https://wa.me/34685182646?text=Hola,%20quiero%20una%20Taza%20Personalizada" class="text-green-600 text-sm font-medium">WhatsApp</a>
+              <a href="mailto:exclusivacustom601@gmail.com?subject=Consulta%20Taza" class="text-blue-600 text-sm font-medium">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shadow-lg rounded-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1623709634662-fc8d6b984fe2?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover" alt="Espinilleras">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Espinilleras Pro</h3>
+          <p class="text-sm text-gray-600">Protección personalizada para futbolistas</p>
+          <div class="mt-3 flex justify-between items-center">
+            <span class="text-lg font-bold">€24.99</span>
+            <div class="space-x-3">
+              <a href="https://wa.me/34685182646?text=Hola,%20quiero%20las%20Espinilleras%20Pro" class="text-green-600 text-sm font-medium">WhatsApp</a>
+              <a href="mailto:exclusivacustom601@gmail.com?subject=Consulta%20Espinilleras" class="text-blue-600 text-sm font-medium">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shadow-lg rounded-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552262e4c?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover" alt="Camiseta">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Camiseta Bordada</h3>
+          <p class="text-sm text-gray-600">Con tu logo, nombre o diseño exclusivo</p>
+          <div class="mt-3 flex justify-between items-center">
+            <span class="text-lg font-bold">€29.99</span>
+            <div class="space-x-3">
+              <a href="https://wa.me/34685182646?text=Hola,%20quiero%20una%20Camiseta%20Bordada" class="text-green-600 text-sm font-medium">WhatsApp</a>
+              <a href="mailto:exclusivacustom601@gmail.com?subject=Consulta%20Camiseta" class="text-blue-600 text-sm font-medium">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section id="testimonios" class="bg-gray-50 py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Opiniones de nuestros clientes</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div><p class="text-sm text-gray-700 italic">“Las camisetas bordadas quedaron espectaculares.”</p><h4 class="font-semibold mt-3">– Laura M.</h4></div>
+        <div><p class="text-sm text-gray-700 italic">“Encargamos espinilleras para todo el equipo.”</p><h4 class="font-semibold mt-3">– David F.</h4></div>
+        <div><p class="text-sm text-gray-700 italic">“Las tazas personalizadas fueron un éxito.”</p><h4 class="font-semibold mt-3">– Paula G.</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="text-center py-20 px-4 bg-black text-white">
+    <h2 class="text-3xl font-bold mb-4">¿Listo para personalizar?</h2>
+    <p class="mb-6 text-lg">Contacta con nosotros por WhatsApp o email</p>
+    <a href="https://wa.me/34685182646?text=Hola,%20quiero%20hacer%20un%20pedido" class="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Contáctanos</a>
+  </section>
+
+  <a href="https://wa.me/34685182646?text=Hola,%20necesito%20ayuda" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg">
+    <i class="ri-whatsapp-line text-xl"></i>
+  </a>
 </body>
 </html>
+"""
+
+# Guardar archivo HTML
+with open(html_path, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+# Crear archivo ZIP
+zip_path = os.path.join(output_dir, "ExclusivaCustom_WebPremium.zip")
+with ZipFile(zip_path, "w") as zipf:
+    zipf.write(html_path, arcname="index.html")
